@@ -47,7 +47,7 @@ var options = {
 
 	},
 
-	center: new google.maps.LatLng(31.304715, 121.512221),
+	center: new google.maps.LatLng(31.304715,121.512221),
 
 	zoom: 16,
 
@@ -60,20 +60,22 @@ var options = {
 };
 
 
+var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(31.304715,121.512221),
+          map: splunksh
+})
+
+
+
+var div = document.getElementById('splunksh');
 
 
 
 
 
-var div = document.getElementById('surabaya');
 
 
-
-
-
-
-
-var map = new google.maps.Map(div, options);
+var map = new google.maps.Map(div, options, marker);
 
 
 
